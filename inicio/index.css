@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #303030;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 50vh 20vh 20vh;
+    grid-template-areas: "a a"
+        "b1 b2"
+        "c c"
+        "d d";
+    grid-gap: 10px;
+}
+
+#topo {
+    grid-area: a;
+    background-color: #aaaaaa;
+    border: 2px solid #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#conteudo1 {
+    grid-area: b1;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo2 {
+    grid-area: b2;
+
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+#rodape1 {
+    grid-area: c;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#rodape2 {
+    grid-area: d;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+   font-size: 20px;
+   color: white;
+}
+
+#img1 {
+    padding: 5px 0px 0px 10px;
+}
+
+#josh1 {
+    width: 65%;
+    height: 90%;
+    text-align: center;
+    border-radius: 10%;
+    border: 2px solid;
+}
+
+.visibilidade {
+    display: none
+}
+
+.visibilidade2 {
+    display: block
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 40vh 20vh 30vh;
+        grid-template-areas: "a"
+            "b1"
+            "c"
+            "d";
+    }
+
+    #conteudo1 {
+    }    
+
+    #conteudo3 {
+        display: none;
+    }
+
+    #conteudo2 {
+        display: none;
+    }
+
+    .visibilidade {
+        display: block
+    }
+
+    .visibilidade2 {
+        display: none;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+}
